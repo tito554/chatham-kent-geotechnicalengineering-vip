@@ -115,6 +115,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#1B4965) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <div class="topbar">
@@ -181,7 +217,7 @@ header.hero, .hero { position: relative !important; }
 
 <section class="block"><div class="container"><h2>Common questions</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
-<details><summary>Why is geotechnical drainage design critical in Chatham-Kent?</summary><p>Because the region's clay soils drain very slowly and the water table is shallow. Without a proper design, water pressure builds up against foundations and cracks basement walls or lifts slabs. A system tailored to local soil conditions prevents costly structural damage.</p></details><details><summary>What is the typical cost range for a drainage design in Chatham-Kent?</summary><p>The cost for a residential drainage design in Chatham-Kent typically ranges from CA$1,070 to CA$3,130. This includes site investigation, permeability testing, and a detailed drainage plan. Larger commercial projects may cost more depending on scope and soil variability.</p></details><details><summary>How do you determine the right pipe size and spacing?</summary><p>We calculate the design discharge based on the contributing drainage area, soil permeability, and the local 5-year or 50-year storm event per NBCC 2020. Pipe size and spacing are then selected to keep the hydraulic gradient below 0.5% and prevent clogging over time.</p></details><details><summary>Do you include sump pump recommendations in your design?</summary><p>Yes. If the site's water table is within 1.5 m of the basement floor, we recommend a sump pump as secondary backup. We specify pump capacity based on the expected inflow rate and include a check valve to prevent backflow. The primary system remains passive gravity drainage.</p></details></div></section>
+<details><summary>Why is geotechnical drainage design critical in Chatham-Kent?</summary><p>Because the region's clay soils drain very slowly and the water table is shallow. Without a proper design, water pressure builds up against <a href="/foundations/">foundations</a> and cracks basement walls or lifts slabs. A system tailored to local soil conditions prevents costly structural damage.</p></details><details><summary>What is the typical cost range for a drainage design in Chatham-Kent?</summary><p>The cost for a residential drainage design in Chatham-Kent typically ranges from CA$1,070 to CA$3,130. This includes site investigation, permeability testing, and a detailed drainage plan. Larger commercial projects may cost more depending on scope and soil variability.</p></details><details><summary>How do you determine the right pipe size and spacing?</summary><p>We calculate the design discharge based on the contributing drainage area, soil permeability, and the local 5-year or 50-year storm event per NBCC 2020. Pipe size and spacing are then selected to keep the hydraulic gradient below 0.5% and prevent clogging over time.</p></details><details><summary>Do you include sump pump recommendations in your design?</summary><p>Yes. If the site's water table is within 1.5 m of the basement floor, we recommend a sump pump as secondary backup. We specify pump capacity based on the expected inflow rate and include a check valve to prevent backflow. The primary system remains passive gravity drainage.</p></details></div></section>
 
 
 
